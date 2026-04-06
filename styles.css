@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  color: #f5f5f5;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-family:orbitron, sans-serif;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  border-left: 4px solid #e50914;
+  padding-left: 10px;
+  font-family:orbitron, sans-serif;
+  
+}
+
+
+p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: justify;
+  line-height: 1.7;
+  color: #dcdcdc;
+  font-family: poppins, sans-serif;
+}
+
+
+
+body > img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+  transition: transform 0.3s ease;
+}
+
+body > img:hover {
+  transform: scale(1.03);
+}
+
+
+ol {
+  max-width: 800px;
+  margin: auto;
+  padding-left: 20px;
+  font-family: poppins, sans-serif;
+}
+
+ol li {
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+ol li:hover {
+  transform: translateX(5px);
+  color: #ffffff;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.grid2 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.grid2 img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+
+
+@media (max-width: 768px) {
+  .grid,
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 25px;
+  font-family: ORBITRON, sans-serif;
+}
+
+nav a:hover {
+  color: #ffffff;
+  transform: scale(1.03);
+}
+
+.img-historia {
+  display: block;
+  margin: 20px auto 40px;
+  width: 70%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  transition: 0.3s;
+}
+
+.img-historia:hover {
+  transform: scale(1.03);
+}
+
+.img-historia2 {
+  display: block;
+  margin: 20px auto 40px;
+  width: 70%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  transition: 0.3s;
+}
+
+.img-historia2:hover {
+  transform: scale(1.03);
+}
+
+.img-historia3 {
+  display: block;
+  margin: 20px auto 40px;
+  width: 70%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  transition: 0.3s;
+}
+
+.img-historia3:hover {
+  transform: scale(1.03);
+}
+
+.img-historia4 {
+  display: block;
+  margin: 20px auto 40px;
+  width: 70%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  transition: 0.3s;
+}
+
+.img-historia4:hover {
+  transform: scale(1.03);
+}
+
+.img-historia5 {
+  display: block;
+  margin: 20px auto 40px;
+  width: 70%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  transition: 0.3s;
+}
+
+.img-historia5:hover {
+  transform: scale(1.03);
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+.galeria img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+
+.galeria img:hover {
+  transform: scale(1.08);
+  filter: brightness(1.2);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
