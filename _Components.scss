@@ -1,6 +1,6 @@
 @use 'variables' as *;
 
-/* Imagen historia (UNA sola clase para todas) */
+
 .img-historia {
   display: block;
   margin: 20px auto 40px;
@@ -15,7 +15,7 @@
   }
 }
 
-/* GRID 2x2 */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -36,7 +36,7 @@
   }
 }
 
-/* GRID 2 imágenes */
+
 .grid2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -55,7 +55,7 @@
   }
 }
 
-/* GALERÍA */
+
 .galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -76,7 +76,7 @@
   }
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .grid, .grid2 {
     grid-template-columns: 1fr;

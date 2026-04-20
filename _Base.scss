@@ -1,6 +1,5 @@
 @use 'variables' as *;
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +15,7 @@ body {
   font-family: $font-text;
 }
 
-/* Títulos */
+
 h1 {
   text-align: center;
   font-size: 3rem;
@@ -34,14 +33,14 @@ h2 {
   font-family: $font-title;
 }
 
-/* Texto */
+
 p {
   max-width: 800px;
   margin: 0 auto 20px;
   text-align: justify;
 }
 
-/* NAV */
+
 nav {
   display: flex;
   justify-content: center;

@@ -1,3 +1,142 @@
 @use 'variables';
 @use 'base';
 @use 'components';
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #1f1f1f);
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  transition: 0.3s;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #e50914;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* TITULOS */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 40px 0 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+h2 {
+  margin: 40px auto 10px;
+  max-width: 900px;
+  font-size: 1.5rem;
+  border-left: 4px solid #e50914;
+  padding-left: 10px;
+}
+
+/* TEXTO */
+p {
+  max-width: 900px;
+  margin: 10px auto;
+  text-align: justify;
+  color: #cfcfcf;
+}
+
+/* IMÁGENES */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* GRID */
+.grid, .grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.grid img, .grid2 img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* GALERÍA */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.galeria img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* EFECTO HOVER PRO */
+.galeria img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grid, .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
