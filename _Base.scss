@@ -1,0 +1,66 @@
+@use 'variables' as *;
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, $bg-dark, $bg-light);
+  color: $text;
+  line-height: 1.6;
+  padding: 20px;
+  font-family: $font-text;
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-family: $font-title;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  border-left: 4px solid $primary;
+  padding-left: 10px;
+  font-family: $font-title;
+}
+
+/* Texto */
+p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: justify;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: $font-title;
+    transition: 0.3s;
+
+    &:hover {
+      color: $primary;
+      transform: scale(1.03);
+    }
+  }
+}

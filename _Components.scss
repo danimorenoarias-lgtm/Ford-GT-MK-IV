@@ -1,0 +1,94 @@
+@use 'variables' as *;
+
+/* Imagen historia (UNA sola clase para todas) */
+.img-historia {
+  display: block;
+  margin: 20px auto 40px;
+  width: 70%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+/* GRID 2x2 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 900px;
+  margin: 40px auto;
+
+  img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+
+    &:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2);
+    }
+  }
+}
+
+/* GRID 2 imágenes */
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 900px;
+  margin: 40px auto;
+
+  img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* GALERÍA */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+
+  img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+
+    &:hover {
+      transform: scale(1.08);
+      filter: brightness(1.2);
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid, .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
